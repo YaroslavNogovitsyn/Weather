@@ -18,12 +18,16 @@
         }
         img {
             height: 100%;
-            margin-right: 20vh;
+            margin-right: 40vh;
         }
     </style>
 </head>
 <body>
     <div class="card">
+        <form class="card-body form-inline d-flex flex-row">
+            <input type="text" name="query" class="form-control me-2 flex-grow-1" placeholder="Введите местоположение: ">
+            <button class="btn btn-primary" type="submit">Поиск</button>
+        </form>
         <div class="card-body info d-flex flew-row">
             <div class="weather-icon">
                 <img src="{{ icon }}">

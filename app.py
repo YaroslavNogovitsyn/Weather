@@ -9,6 +9,10 @@ app = Flask(__name__)
 def index():
     with open('design.html', 'r', encoding='utf-8') as html_stream:
         html = html_stream.read()
+
+    weather = ws.get_weather()
+    for replace in weather:
+        html = html.replace(f'{{{{ {replace} }}}}', str(weather[replace]))
     return html
 
 

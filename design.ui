@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Погода</string>
+   <string>Weather</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -23,14 +23,14 @@
          <item>
           <widget class="QLineEdit" name="query">
            <property name="placeholderText">
-            <string>Введите название региона:</string>
+            <string>Enter the name of the region:</string>
            </property>
           </widget>
          </item>
          <item>
           <widget class="QPushButton" name="search">
            <property name="text">
-            <string>Поиск</string>
+            <string>Search</string>
            </property>
           </widget>
          </item>

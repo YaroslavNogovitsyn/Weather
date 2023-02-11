@@ -4,7 +4,7 @@ from PyQt5 import uic
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QMainWindow, QApplication
 
-import ws
+import ws_for_qt
 
 
 class Window(QMainWindow):
@@ -14,7 +14,7 @@ class Window(QMainWindow):
         self.search.clicked.connect(self.onSearch)
 
     def onSearch(self):
-        weather = ws.get_weather(self.query.text())
+        weather = ws_for_qt.get_weather(self.query.text())
         if weather:
             icon = QPixmap()
             icon.loadFromData(weather['icon'])
